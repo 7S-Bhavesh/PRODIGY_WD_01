@@ -7,8 +7,7 @@ export const Team = (props) => {
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Meet our team of dedicated professionals who bring passion, expertise, and creativity to everything we do. Each member is committed to delivering exceptional results and working together to achieve our shared vision. With diverse skills and a collaborative spirit, we strive to innovate and push boundaries, ensuring that we not only meet but exceed expectations. Together, we're more than just a team — we're a family driven by a common goal: your success.
           </p>
         </div>
         <div id="row">

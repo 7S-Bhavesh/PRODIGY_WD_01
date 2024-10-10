@@ -12,7 +12,11 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About Us</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              <p>
+                {props.data
+                  ? props.data.paragraph
+                  : "At the heart of our organization is a passion for innovation and a commitment to excellence. We have built our reputation by delivering top-quality solutions that empower our clients and transform their businesses. Our journey began with a simple goal: to provide exceptional value through creative thinking and cutting-edge technology. Today, we continue to evolve, staying ahead of the curve to meet the ever-changing needs of our customers. Our dedicated team works tirelessly to bring ideas to life and turn challenges into opportunities."}
+              </p>
               <h3>Why Choose Us?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
@@ -21,16 +25,26 @@ export const About = (props) => {
                       ? props.data.Why.map((d, i) => (
                           <li key={`${d}-${i}`}>{d}</li>
                         ))
-                      : "loading"}
+                      : <>
+                          <li>Proven track record of success</li>
+                          <li>Customer-focused approach</li>
+                          <li>Innovative solutions tailored to your needs</li>
+                        </>
+                    }
                   </ul>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
                     {props.data
                       ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}> {d}</li>
+                          <li key={`${d}-${i}`}>{d}</li>
                         ))
-                      : "loading"}
+                      : <>
+                          <li>Highly skilled and experienced team</li>
+                          <li>Commitment to excellence</li>
+                          <li>Comprehensive support and guidance</li>
+                        </>
+                    }
                   </ul>
                 </div>
               </div>
